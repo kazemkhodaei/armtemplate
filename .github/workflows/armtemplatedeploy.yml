@@ -45,5 +45,5 @@ jobs:
            parameters: 
             ./arm-templates/storageaccount.parameters.json
             storageAccountName=globalstg002
-            location="north europe"
+
 
