@@ -23,6 +23,6 @@ jobs:
         uses: Azure/cli@v1
         with: 
           inilinescript: |
-            az deployment sub create --location "west europe" --template-file ./arm-tempaltes/resourcegroup.json
+            az deployment sub create --template-file ./arm-templates/resourcegroup.json
 
            
