@@ -41,7 +41,7 @@ jobs:
            template: ./arm-templates/storageaccount.json
            resourceGroupName: rg-github-actions
            scope: resourcegroup
-           deploymentMode: incremental #incremental/ complete
+           deploymentMode: complete #incremental/ complete
            parameters: 
             ./arm-templates/storageaccount.parameters.json
             storageAccountName=globalstg002
