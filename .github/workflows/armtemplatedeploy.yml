@@ -32,7 +32,7 @@ jobs:
            template: ./arm-templates/resourcegroup.json
            scope: subscription
            region: west europe
-           deoploymentName: rg-github-actions
+           deploymentName: rg-github-actions
             
       - name: Deploy Storage Account
         uses: azure/arm-deploy@v1
@@ -45,5 +45,5 @@ jobs:
            parameters: 
             ./arm-templates/storageaccount.parameters.json
             storageAccountName=globalstg002
-            location="east europe"
+            location="north europe"
 
