@@ -42,4 +42,8 @@ jobs:
            resourceGroupName: rg-github-actions
            scope: resourcegroup
            deploymentMode: incremental #incremental/ complete
-           parameters: ./arm-templates/storageaccount.parameters.json
+           parameters: 
+            ./arm-templates/storageaccount.parameters.json
+            storageAccountName=globalstg002
+            location="east europe"
+
