@@ -34,5 +34,12 @@ jobs:
            region: west europe
            deoploymentName: rg-github-actions
             
-
-           
+      - name: Deploy Storage Account
+        uses: azure/arm-deploy@v1
+        with:
+           subscriptionId: 3147637b-0fe6-4369-b7c1-a6bee6eea31a
+           template: ./arm-templates/storageaccount.json
+           resourceGroupName: rg-github-actions
+           scope: resourcegroup
+           deploymentMode: incremental #incremental/ complete
+           parameters: ./arm-templates/storageaccount.parameters.json
