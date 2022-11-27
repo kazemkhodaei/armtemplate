@@ -57,7 +57,7 @@ jobs:
            scope: resourcegroup
            deploymentMode: incremental #incremental/ complete
            parameters: 
-             adminPassword="My$ecureP@ssword!"
+             adminPassword=${{secrets.UBUNTO_ADMIN_PASSWORD}}
       - run : echo ${{ steps.storageAccountDeploy.outputs.BlobUri }}
 
 
